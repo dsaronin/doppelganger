@@ -39,6 +39,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import android.widget.Toast
 import androidx.viewpager2.widget.ViewPager2
+//import com.google.android.material.tabs.TabLayoutMediator
 
 
 /**
@@ -80,9 +81,16 @@ class MainActivity : AppCompatActivity() {
     doppelgangerViewPager.registerOnPageChangeCallback(doppelgangerPageChangeCallback)
 
 
-    //TODO:7 Change ViewPager2 orientation here
+    //:7 Change ViewPager2 orientation here
+    doppelgangerViewPager.orientation = ViewPager2.ORIENTATION_VERTICAL
 
-    //TODO:10 Connect TabLayout and ViewPager2 here
+
+    //:10 Connect TabLayout and ViewPager2 here
+//    TabLayoutMediator(tabLayout, doppelgangerViewPager) { tab, position ->
+//      //To get the first name of doppelganger celebrities
+//      tab.text = doppelgangerNamesArray[position].split(" ")[0]
+//    }.attach()
+
 
     //TODO:11 Force to RTL mode
   }
